@@ -2,6 +2,8 @@
 import PyPDF4 
 from PyPDF4 import PdfFileReader, PdfFileWriter
 
+test = 0
+
 def put_watermark(input_pdf, output_pdf, watermark):
     # Reads watermark file through PdfFileReader and assigns it to watermark_instance variable
     watermark_instance = PdfFileReader(watermark)
