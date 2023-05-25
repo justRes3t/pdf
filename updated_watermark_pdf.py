@@ -17,7 +17,8 @@ def put_watermark(input_pdf, output_pdf, watermark):
   
     # Loops through the input PDF pages and applies watermark
     for page in range(pdf_reader.getNumPages()):
-          
+
+        # Assigns the current page of the PDF being read to the variable page  
         page = pdf_reader.getPage(page)
           
         # Places the watermark by merging watermark page with current page of input PDF
